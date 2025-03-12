@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Source_Sans_3 as FontSans } from "next/font/google";
 import "./globals.css";
+import {  Header2 } from "@/components/common/header";
+import { Footer } from "@/components/common/footer";
+import { ThemeProvider } from "@/components/ui/theme-provider";
+
 
 const fonstSans = FontSans({
   variable: "--font-geist-sans",
@@ -21,11 +25,33 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html 
+      lang="en"
+      suppressHydrationWarning
+    >
       <body
         className={`font-sans ${fonstSans.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
+        <div className="relative flex min-h-screen flex-col ">
+        
+          <Header2/>
+            
+            <main className="flex-1">
+            
+              {children}
+              
+              </main>
+            
+          <Footer/>
+        </div>
+        </ThemeProvider>
+        
       </body>
     </html>
   );
