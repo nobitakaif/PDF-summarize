@@ -1,7 +1,7 @@
 import Link from "next/link"
 import {FileText} from "lucide-react"
 import { ModeToggle } from "../ui/mode.toggle"
-import { Island_Moments } from "next/font/google"
+
 
 // export const Header=()=>{
 //     const isLoggedIn = true
@@ -29,20 +29,20 @@ export function Header2(){
         {/* main Logo */}
         <div className="flex items-center lg:py-px">
              <Link href={"/"} className="flex items-center lg:py-px">
-                <FileText className="hover:rotate-12 transition duration-300 ease-in-out cursor-pointer mr-2"/>
-                <span className="lg:text-xl font-extrabold">Sommaire</span>
+                <FileText className="hover:rotate-12 md:block hidden lg:block transition duration-300 ease-in-out cursor-pointer mr-2"/>
+                <span className="lg:text-xl font-extrabold text-lg">Sommaire</span>
             </Link>
         </div>
 
             {/* pricing or dashboard */}
         <div>
-            {isLoggedIn ?  (<Link href={"/dashboard"}>dashboard</Link>) : 
+            {isLoggedIn ?  (<Link href={"/dashboard"} className="lg:pr-30">dashboard</Link>) : 
             ( <Link href={"/pricing"}>pricing</Link>)}
             
         </div>
 
         {/* authorizatoin */}
-        <div className="pr-3 sm:pr-8 cursor-pointer">
+        <div className="lg:pr-4 pr-3 sm:pr-8 cursor-pointer">
             {isLoggedIn ? (<ModeToggle />) : (<span>user</span>)}
             
         </div>
