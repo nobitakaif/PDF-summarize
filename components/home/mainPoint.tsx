@@ -10,7 +10,7 @@ export function MainPoint(){
             Transform lengthy documents into clear, actionable insights with our <span className=""> AI-powered summarizer.</span>
         </div>
         <div  className="">
-            <Button size={"lg"} className="rounded-full hover:scale-105  duration-300 w-44  text-lg cursor-pointer lg:h-10 lg:w-44 mt-3 lg:text-xl bg-linear-to-r from-slate-900 to-white hover:from-white hover:to-slate-900 transition duration-900 shadow-xlg border text-[#E8F9FF]">Buy Now <ArrowRightIcon/>
+            <Button size={"lg"} className="rounded-full hover:scale-105  duration-300 w-44  text-lg cursor-pointer lg:h-10 lg:w-44 mt-3 lg:text-xl bg-linear-to-r from-slate-900 to-white hover:from-white hover:to-slate-900 transition duration-900 shadow-xlg border text-[#E8F9FF]">Get Strated <ArrowRightIcon/>
             </Button>
         </div>
     </div>
