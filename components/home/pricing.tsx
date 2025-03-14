@@ -1,4 +1,4 @@
-import { ArrowRightIcon, Check } from "lucide-react"
+import { ArrowRightIcon, Check, Crown } from "lucide-react"
 import Link from "next/link"
 import { Button } from "../ui/button"
 
@@ -58,8 +58,8 @@ function Card({
 }:PriceType){
     return <div className="h-96 lg:w-96 md:w-96  m-3 bg-gray-300/50 text-black dark:text-white dark:bg-[#232b2b] rounded-xl">
         <div className="p-5">
-            <div className="text-2xl">
-                <p>{name} </p>
+            <div className="text-2xl font-bold" >
+                {name == "Basic" ? <p className="font-extrabold">{name} </p> : <p className="font-extrabold flex gap-2 items-center">{name}<Crown/> </p>}
                 <p>{description}</p>
             </div>
             <div className="text-5xl mt-4 ">
