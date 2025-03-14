@@ -4,6 +4,7 @@ import Button from "@/components/customUi/Custom-Button";
 import { DemoSection } from "@/components/home/demo-section";
 import HeroSection from "@/components/home/hero-section";
 import { HowItsWork } from "@/components/home/how-its-work";
+import { MainPoint } from "@/components/home/mainPoint";
 import { Pricing } from "@/components/home/pricing";
 import { Overview } from "@/components/home/quick-overview";
 
@@ -23,6 +24,7 @@ export default function Home() {
       <Overview/>
       <HowItsWork/>
       <Pricing/>
+      <MainPoint/>
     </div>
   );
 }

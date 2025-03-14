@@ -5,10 +5,13 @@ import { cn } from "@/lib/utils"
 
 
 export function Pricing(){
-    return <div className="lg:flex md:flex justify-center items-center">
+    return <div>
+        <div className="font-bold text-4xl text-center m-4">Plans</div>
+    <div className="lg:flex md:flex justify-center items-center">
         <Card name={"Basic"} description="Perfect for occasional use" price={9} />
         <Card name="Pro" description="For professionals and teams"  price={19} />
     </div>
+    </div> 
 }
 
 
@@ -74,7 +77,7 @@ function Card({
         )}
         <p>{description}</p>
       </div>
-      <div className="text-5xl mt-4">${price}</div>
+      <div className="text-5xl mt-4 flex items-center gap-1 font-bold">${price}<div className="text-sm flex flex-col font-bold leading-4">USD <span className="font-medium">/month</span></div> </div>
       <div className="pt-4 flex flex-col gap-2">
         {name === "Basic" ? (
           <>

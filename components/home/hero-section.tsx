@@ -41,7 +41,7 @@ export default function HeroSection(){
                 Get a beautiful summary reel of the document in seconds.
             </div>
 
-            <Button size={"lg"} className="rounded-full cursor-pointer lg:h-10 lg:w-44 mt-3 lg:text-xl bg-linear-to-r from-slate-900 to-white hover:from-white hover:to-slate-900 transition duration-900 shadow-xlg border text-[#E8F9FF]">Try Sommaire <ArrowRightIcon/></Button>
+            <Button size={"lg"} className="rounded-full cursor-pointer lg:h-10  hover:scale-110 hover:transition-all duration-200 lg:w-44 mt-3 lg:text-xl bg-linear-to-r from-slate-900 to-white hover:from-white hover:to-slate-900 transition duration-900 shadow-xlg border text-[#E8F9FF]">Try Sommaire <ArrowRightIcon/></Button>
     </section>
 }
 

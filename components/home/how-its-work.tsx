@@ -4,7 +4,7 @@ import { BrainCircuit, FileOutput, FileText, MoveRight } from "lucide-react"
 export function HowItsWork(){
 
     return <div>
-            <div className=" flex flex-col  shadow-2xl h-32 rounded-lg m-2 mt-6 light:shadow-[#232b2b]">
+            <div className=" flex flex-col  shadow-2xl h-38 rounded-lg m-2 mt-6 light:shadow-[#232b2b]">
             <div className="w-full text-center mt-5 dark:text-gray-400 text-gray-900/50 font-extrabold lg:text-2xl">
                 -- HOW IT WORKS -- 
             </div>
