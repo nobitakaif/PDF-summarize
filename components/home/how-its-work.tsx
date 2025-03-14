@@ -8,17 +8,17 @@ export function HowItsWork(){
             <div className="w-full text-center mt-5 dark:text-gray-400 text-gray-900/50 font-extrabold lg:text-2xl">
                 -- HOW IT WORKS -- 
             </div>
-            <div className="lg:text-4xl text-xl text-center font-bold md:text-2xl ">
+            <div className=" text-3xl text-center font-bold max-w-2xl mx-auto">
                 Transform any PDF into an easy-to-digest summary in three simple steps
             </div>
             
         </div>
         <div className="lg:flex md:flex md:justify-center lg:justify-center pt-9 m-1">
-            <Card img={<FileText className="h-[64] w-[64] "/>} title={"AI Analysis"} subHeading={"This is sub heading for AI Analysis"}/>
+            <Card img={<FileText className="h-[64] w-[64] "/>} title={"Upload your PDF"} subHeading={"Simply drag and drop your PDF document or click to upload"}/>
             <div className="hidden md:block lg:block"><MoveRight className="mt-20 "/></div>
-            <Card img={<BrainCircuit className="h-[64] w-[64] "/>} title={"Brain Circuit"} subHeading={"This is sub heading for Brain Circuit"}/>
+            <Card img={<BrainCircuit className="h-[64] w-[64] "/>} title={"AI Analysis"} subHeading={"Our advanced AI processes and analyzes your document instantly"}/>
             <div className="hidden md:block lg:block"><MoveRight className="mt-20 "/></div>
-            <Card img={<FileOutput className="h-[64] w-[64] "/>} title={"File Output"} subHeading={"This is sub heading for File Output"}/>
+            <Card img={<FileOutput className="h-[64] w-[64] "/>} title={"Get Summary"} subHeading={"Receive a clear, concise summary of your document"}/>
         </div>
     </div>
     
@@ -34,7 +34,7 @@ function Card(
         title:string,
         subHeading:string
     }){
-    return <div className="h-52  lg:w-52 relative mr-6 ml-6 rounded-xl hover:border   hover:border-rose-500/410 m-3 ">
+    return <div className="h-52  lg:w-80 relative mr-6 ml-6 rounded-xl hover:border   hover:border-rose-500/410 m-3 md:px-py ">
         <div className="w-full flex items-center justify-center pt-10 ">
             <div className="dark:bg-[#232b2b] w-18 h-18 p-1 bg-gray-300/50 rounded-lg">{img}</div>
         </div>

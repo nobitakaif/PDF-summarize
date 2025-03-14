@@ -25,7 +25,9 @@ import { ModeToggle } from "../ui/mode.toggle"
 
 export function Header2(){
     const isLoggedIn = true
-    return <div className="lg:m-3 m-2 mt-3 flex justify-between items-center lg:py-px lg:mr-5 lg:ml-20">
+    return <div className="">
+     <div className="lg:m-3 m-2 mt-3 flex justify-between items-center lg:py-px  lg:ml-20    ">
+
         {/* main Logo */}
         <div className="flex items-center lg:py-px">
              <Link href={"/"} className="flex items-center lg:py-px">
@@ -42,9 +44,10 @@ export function Header2(){
         </div>
 
         {/* authorizatoin */}
-        <div className="lg:pr-4 pr-3 sm:pr-8 cursor-pointer">
+        <div className="lg:pr-4 lg:mr-25 pr-3 sm:pr-8 cursor-pointer">
             {isLoggedIn ? (<ModeToggle />) : (<span>user</span>)}
             
+        </div>
         </div>
     </div>
 }
